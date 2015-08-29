@@ -2,7 +2,7 @@
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
 // @version      0.4
-// @description  automatic login.
+// @description  automatic verify code complete .
 // @author       pypi
 // @match        http://10.202.78.11/default2.aspx
 // @match        http://jwbinfosys.zju.edu.cn/default2.aspx

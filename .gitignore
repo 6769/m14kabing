@@ -1,0 +1,27 @@
+﻿# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+*.pyc
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Other
+*.pdf
+*.htm*
+*.m
+*.jpg
+*.jpeg
+*.bmp
+*.txt
