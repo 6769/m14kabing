@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
-// @version      0.4
+// @version      0.5
 // @description  automatic verify code complete .
 // @author       pypi
 // @match        http://10.202.78.11/default2.aspx
@@ -62,11 +62,12 @@ function getBase64Image(img) {
     var canvas = document.createElement("canvas");
     // canvas.width = img.width-5;//60*22,actually 65*24
     // canvas.height = img.height-2;
-    canvas.width =60;
-    canvas.height =22;
+    canvas.width =img.naturalWidth;
+    canvas.height =img.naturalHeight;
     // Copy the image contents to the canvas
     var ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0);
+    //another problem will happened if img hasn't loaded over.->get broken picture.
 
     // Get the data-URL formatted image
     // Firefox supports PNG and JPEG. You could check img.src to
@@ -79,6 +80,7 @@ function getBase64Image(img) {
     console.log(dataURL);
     window.open(dataURL);
 
+    //Bug_0
     //during most periods,Base64code presents well ,Howerver,B64String length become very short,
     //It's happens 5/20;
     return dataURL.replace("data:image/png;base64,",'');
@@ -106,10 +108,11 @@ function maintask ( ) {
 
     //convertImage->string
     img=document.getElementsByTagName('img')[0];
+    
+    img.onload = function() {
+    // when image is loaded...
+    console.log(getBase64Image(img));
     b64string=getBase64Image(img);
-
-
-
     //
     StringOfImage=Host+"?img="+b64string;
 
@@ -117,8 +120,15 @@ function maintask ( ) {
     httpGetAsync(StringOfImage,inputVerifyCode);
 
     document.getElementById(StudentBox).value=StudentID;
-    document.getElementById(PassworDBox).value=PassworD;	
+    document.getElementById(PassworDBox).value=PassworD;
+	};
 
 }
 
 maintask();
+
+/*Thanks to 
+http://stackoverflow.com/questions/934012/get-image-data-in-javascript
+http://stackoverflow.com/questions/23493147/error-when-converting-image-to-base64
+
+*/
