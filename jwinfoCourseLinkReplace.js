@@ -6,8 +6,8 @@
 // @author       pypi
 // @match        http://jwbinfosys.zju.edu.cn/xskbcx.aspx*
 // @grant        none
-// @updateURL   
-// @downloadURL 
+// @updateURL    https://github.com/6769/m14kabing/raw/master/jwinfoCourseLinkReplace.js
+// @downloadURL  https://github.com/6769/m14kabing/raw/master/jwinfoCourseLinkReplace.js
 // ==/UserScript==
 
 //running test
@@ -17,7 +17,7 @@ var Course_Info_Header="http://jwbinfosys.zju.edu.cn/html_kc/";
 
 function ReplaceID(atag,stringtoreplace_header){
     atag.onclick=function(){};
-    atag.href=stringtoreplace+atag.textContent+".html";
+    atag.href=stringtoreplace_header+atag.textContent+".html";
     console.log(atag.href);
 }
 
