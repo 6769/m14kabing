@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
-// @version      0.6
+// @version      0.7
 // @description  automatic verify code complete .
 // @author       pypi
 // @match        http://10.202.78.11/default2.aspx
@@ -80,12 +80,14 @@ function getBase64Image(img) {
 
     //debugtest
     console.log(dataURL);
-    window.open(dataURL);
+    //window.open(dataURL);
 
     //Bug_0
     //during most periods,Base64code presents well ,Howerver,B64String length become very short,
     //It's happens 5/20;
-    return dataURL.replace("data:image/png;base64,",'');
+    var pure_b64string=dataURL.replace("data:image/png;base64,",'');
+    var urlsafe_pure_b64string=pure_b64string.replace(/\+/g,'-');
+    return urlsafe_pure_b64string.replace(/\//g ,'_');
 }
 
 function httpGetAsync(theUrl, callback)
