@@ -1,28 +1,31 @@
 // ==UserScript==
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
-// @version      0.8
-// @description  automatic verify code complete .
-// @author       pypi
+// @version      0.9
+// @description  Automaticly complete Verification code in ZJU jwinfobsys .
+// @author       5pipi
 // @match        http://10.202.78.11/default2.aspx
 // @match        http://jwbinfosys.zju.edu.cn/default2.aspx
 // @updateURL    https://github.com/6769/m14kabing/raw/master/jwinfoLogin.js
 // @downloadURL  https://github.com/6769/m14kabing/raw/master/jwinfoLogin.js
 // @grant        none
+// @license      GPL version 3
+// @encoding     utf-8
+// @usage		 In StudentID,change a dozen zeros to your id,and the password.
 // ==/UserScript==
 'use strict';
 var StudentID="0000000000";//Your StudentsID;
 
-var PassworD="0000000000";//Your password of the website;
+var PassworD="";//Your password of the site,if you don't like to fill here,keep[ "" ];
 
 
 var StudentBox="TextBox1";
 var PassworDBox="TextBox2";
-var VerifyCodeBox="Textbox3";//what a fuck....TextBox in the front,Textbox here....
+var VerifyCodeBox="Textbox3";
 var ErrorCode="0";
 var RegularExpress="\\d{5}";
 
-var Debug=1;//1 ===Debug;0===release;
+var Debug=0;//1 ===Debug;0===release;
 var StringOfImage;
 var Host="http://localhost:8000/polls/api";
 
@@ -111,6 +114,7 @@ function httpGetAsync(theUrl, callback)
 
 function maintask ( ) {
     var b64string;
+    var img;
     DebugSwitch(Debug);
 
     //convertImage->string
