@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
-// @version      0.9
+// @version      1.0
 // @description  Automaticly complete Verification code in ZJU jwinfobsys .
 // @author       5pipi
 // @match        http://10.202.78.11/default2.aspx
@@ -27,7 +27,7 @@ var RegularExpress="\\d{5}";
 
 var Debug=0;//1 ===Debug;0===release;
 var StringOfImage;
-var Host="http://localhost:8000/polls/api";
+var Host="http://api.5pipi.tk/api";
 
 
 //environment initialized;
