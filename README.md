@@ -4,13 +4,14 @@
 .
 ##1. JwinfoLogin.js##
 
-this script needs an API as verify code transformer.  I will provide an availlable one for our test as soon as possible.This script work for this flow:
+this script needs an API as verify code transformer. An availlable one for our test is [http://api.5pipi.tk/api/zjuocr?img=<base64encoded img>](http://api.5pipi.tk/api/zjuocr?img=<base64encoded img> "http://api.5pipi.tk/api/zjuocr?img=<base64encoded img>").This script work for this flow:
 
- 1.load the original page,
- 2.get img object and describe in Base64 form.
- 3.in xmlhttp,send out base64 code and API return number.
- 4.fill it!
+1. Load the original page,
+2. Get image object and describe in Base64 form.
+3. In xmlhttp,send out previous base64 encoded strings and API will return the number.
+4. Fill it!
 
 ##2. JwinfoCourseLinkReplace.js ##
 
-this will be easy in page use http://jwbinfosys.zju.edu.cn/xskbcx.aspx?xh=313010xxxx; however,some problems haven't solved in table and list modes.
+This will be easy in page use http://jwbinfosys.zju.edu.cn/xskbcx.aspx?xh=313010xxxx; 
+however,some problems haven't solved in table and list modes.

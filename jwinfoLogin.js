@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
-// @version      1.0
+// @version      1.0.1
 // @description  Automaticly complete Verification code in ZJU jwinfobsys .
 // @author       5pipi
 // @match        http://10.202.78.11/default2.aspx
@@ -11,7 +11,7 @@
 // @grant        none
 // @license      GPL version 3
 // @encoding     utf-8
-// @usage		 In StudentID,change a dozen zeros to your id,and the password.
+// @usage		 In StudentID,change a dozen zeros to your id,and the password.The service site ,I provide an available one use Niginx+uWSGI+Flask on linux.
 // ==/UserScript==
 'use strict';
 var StudentID="0000000000";//Your StudentsID;
@@ -25,9 +25,9 @@ var VerifyCodeBox="Textbox3";
 var ErrorCode="0";
 var RegularExpress="\\d{5}";
 
-var Debug=0;//1 ===Debug;0===release;
+var Debug=0;//1 === Debug;	0 === Release;
 var StringOfImage;
-var Host="http://api.5pipi.tk/api";
+var Host="http://api.5pipi.tk/api/zjuocr";
 
 
 //environment initialized;
@@ -42,6 +42,11 @@ function inputVerifyCode (jsonobject_str) {
 	var number ;
 
 	number= eval("("+jsonobject_str+")")['verify']
+
+
+	//optional choice.
+	number.replace(/B/g,'8');
+	//try to fix OCR's limited point when using in reality.Api return "verify": "70B41" .
     var number_confirm=new RegExp(RegularExpress);
     var number_int;
     if (number.length===5 && typeof(number)==='string') 
