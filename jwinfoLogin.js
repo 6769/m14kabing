@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JwinfoAutomationLogin
 // @namespace    https://github.com/6769/m14kabing
-// @version      0.7
+// @version      0.8
 // @description  automatic verify code complete .
 // @author       pypi
 // @match        http://10.202.78.11/default2.aspx
@@ -35,7 +35,10 @@ function DebugSwitch(booleanvalue){
         };
     }
 }
-function inputVerifyCode (number) {
+function inputVerifyCode (jsonobject_str) {
+	var number ;
+
+	number= eval("("+jsonobject_str+")")['verify']
     var number_confirm=new RegExp(RegularExpress);
     var number_int;
     if (number.length===5 && typeof(number)==='string') 

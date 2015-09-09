@@ -61,23 +61,7 @@ def callthisapi(apiname,request):
     return apireturn
         
             
-    #find para
-    
-    
-#@app.route('/signin', methods=['GET'])
-#def signin_form():
-#    searchword = request.args.get('q', '')
-#    print(searchword)
-#    return render_template('form.html')
-#
-#@app.route('/signin', methods=['POST'])
-#def signin():
-#    username = request.form['username']
-#    password = request.form['password']
-#    if username=='admin' and password=='password':
-#        return render_template('signin-ok.html', username=username)
-#    return render_template('form.html', 
-#                           message='Bad username or password', username=username)
+
 #                           
 @app.route('/admin',methods=['GET'])
 def adminpage():
