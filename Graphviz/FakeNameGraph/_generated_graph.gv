@@ -1,0 +1,239 @@
+digraph main{
+    node[shape=box,color=red]
+    main[shape=diamond,color=blue]
+    
+    main -> init
+
+    main -> nameline
+    nameline ->"Lashawn Larson"
+    //generated
+         "Lashawn Larson" -> "Shalon Nikolaus MD" 
+    //the 0--48 
+     "Albertina Rogahn" -> "Lashawn Larson" 
+    //the 1--0 
+     "Albertina Rogahn" -> "Dr. Landen Moore Sr." 
+    //the 1--14 
+     "Tiarra Schaefer" -> "Ebba Dicki" 
+    //the 2--8 
+     "Tiarra Schaefer" -> "Bradford Ernser" 
+    //the 2--18 
+     "Tiarra Schaefer" -> "Kenya Schimmel" 
+    //the 2--31 
+     "Miller Stracke" -> "Melodee Schuster" 
+    //the 3--23 
+     "Miller Stracke" -> "Rob Dooley PhD" 
+    //the 3--24 
+     "Miller Stracke" -> "Alena Leuschke" 
+    //the 3--43 
+     "Evalena Hegmann PhD" -> "Albertina Rogahn" 
+    //the 4--1 
+     "Evalena Hegmann PhD" -> "Ebba Dicki" 
+    //the 4--8 
+     "Ms. Aldona Schumm MD" -> "Ebba Dicki" 
+    //the 5--8 
+     "Ms. Aldona Schumm MD" -> "Alena Leuschke" 
+    //the 5--43 
+     "Palmer Oberbrunner" -> "Twyla Harris" 
+    //the 6--15 
+     "Palmer Oberbrunner" -> "Brylee Jacobson DDS" 
+    //the 6--16 
+     "Palmer Oberbrunner" -> "Mr. Hazen Wilderman" 
+    //the 6--25 
+     "Palmer Oberbrunner" -> "Lorrayne Kunde MD" 
+    //the 6--29 
+     "Florencio Jacobs" -> "Pinkey Kuhic" 
+    //the 7--33 
+     "Ebba Dicki" -> "Haleigh Brekke" 
+    //the 8--9 
+     "Ebba Dicki" -> "Hester Conn" 
+    //the 8--17 
+     "Ebba Dicki" -> "Eben Oberbrunner" 
+    //the 8--34 
+     "Haleigh Brekke" -> "Tiarra Schaefer" 
+    //the 9--2 
+     "Haleigh Brekke" -> "Jade Walsh" 
+    //the 9--10 
+     "Haleigh Brekke" -> "Brylee Jacobson DDS" 
+    //the 9--16 
+     "Haleigh Brekke" -> "Agatha Hilpert" 
+    //the 9--32 
+     "Haleigh Brekke" -> "Osborne Homenick" 
+    //the 9--36 
+     "Jade Walsh" -> "Albertina Rogahn" 
+    //the 10--1 
+     "Jade Walsh" -> "Tiarra Schaefer" 
+    //the 10--2 
+     "Jade Walsh" -> "Harley Littel" 
+    //the 10--28 
+     "Jade Walsh" -> "Kenya Schimmel" 
+    //the 10--31 
+     "Jade Walsh" -> "Eben Oberbrunner" 
+    //the 10--34 
+     "Arvilla Schowalter" -> "Florencio Jacobs" 
+    //the 11--7 
+     "Arvilla Schowalter" -> "Braedon Ritchie" 
+    //the 11--27 
+     "Arvilla Schowalter" -> "Dr. Tyrin Cummings Jr." 
+    //the 11--39 
+     "Arvilla Schowalter" -> "Ples Wehner" 
+    //the 11--49 
+     "Huston Yost" -> "Evalena Hegmann PhD" 
+    //the 12--4 
+     "Huston Yost" -> "Arvilla Schowalter" 
+    //the 12--11 
+     "Huston Yost" -> "Lorrayne Kunde MD" 
+    //the 12--29 
+     "Huston Yost" -> "Louie Heller" 
+    //the 12--44 
+     "Soledad Botsford" -> "Huston Yost" 
+    //the 13--12 
+     "Soledad Botsford" -> "Virgil Stroman" 
+    //the 13--22 
+     "Soledad Botsford" -> "Rob Dooley PhD" 
+    //the 13--24 
+     "Soledad Botsford" -> "Alena Leuschke" 
+    //the 13--43 
+     "Dr. Landen Moore Sr." -> "Brylee Jacobson DDS" 
+    //the 14--16 
+     "Twyla Harris" -> "Dr. Landen Moore Sr." 
+    //the 15--14 
+     "Twyla Harris" -> "Ellison Littel" 
+    //the 15--21 
+     "Brylee Jacobson DDS" -> "Virgil Stroman" 
+    //the 16--22 
+     "Brylee Jacobson DDS" -> "Kenya Schimmel" 
+    //the 16--31 
+     "Ms. Aline Johnson PhD" -> "Osborne Homenick" 
+    //the 19--36 
+     "Ms. Aline Johnson PhD" -> "Atticus Spencer" 
+    //the 19--47 
+     "Gaylord Collins" -> "Brylee Jacobson DDS" 
+    //the 20--16 
+     "Gaylord Collins" -> "Bradford Ernser" 
+    //the 20--18 
+     "Gaylord Collins" -> "Mr. Ronal Balistreri" 
+    //the 20--35 
+     "Ellison Littel" -> "Evalena Hegmann PhD" 
+    //the 21--4 
+     "Ellison Littel" -> "Yasmine Kris" 
+    //the 21--42 
+     "Virgil Stroman" -> "Lashawn Larson" 
+    //the 22--0 
+     "Virgil Stroman" -> "Twyla Harris" 
+    //the 22--15 
+     "Melodee Schuster" -> "Albertina Rogahn" 
+    //the 23--1 
+     "Melodee Schuster" -> "Rob Dooley PhD" 
+    //the 23--24 
+     "Melodee Schuster" -> "Mr. Benjamine Quitzon" 
+    //the 23--30 
+     "Melodee Schuster" -> "Rolando Koch DDS" 
+    //the 23--37 
+     "Rob Dooley PhD" -> "Huston Yost" 
+    //the 24--12 
+     "Rob Dooley PhD" -> "Brylee Jacobson DDS" 
+    //the 24--16 
+     "Rob Dooley PhD" -> "Virgil Stroman" 
+    //the 24--22 
+     "Rob Dooley PhD" -> "Melodee Schuster" 
+    //the 24--23 
+     "Rob Dooley PhD" -> "Mr. Benjamine Quitzon" 
+    //the 24--30 
+     "Rob Dooley PhD" -> "Dr. Tyrin Cummings Jr." 
+    //the 24--39 
+     "Mr. Hazen Wilderman" -> "Pinkey Kuhic" 
+    //the 25--33 
+     "Marian Deckow" -> "Mr. Ronal Balistreri" 
+    //the 26--35 
+     "Harley Littel" -> "Bradford Ernser" 
+    //the 28--18 
+     "Lorrayne Kunde MD" -> "Albertina Rogahn" 
+    //the 29--1 
+     "Lorrayne Kunde MD" -> "Palmer Oberbrunner" 
+    //the 29--6 
+     "Mr. Benjamine Quitzon" -> "Arvilla Schowalter" 
+    //the 30--11 
+     "Mr. Benjamine Quitzon" -> "Ples Wehner" 
+    //the 30--49 
+     "Kenya Schimmel" -> "Albertina Rogahn" 
+    //the 31--1 
+     "Kenya Schimmel" -> "Mr. Ronal Balistreri" 
+    //the 31--35 
+     "Agatha Hilpert" -> "Louie Heller" 
+    //the 32--44 
+     "Pinkey Kuhic" -> "Marian Deckow" 
+    //the 33--26 
+     "Pinkey Kuhic" -> "Mr. Ronal Balistreri" 
+    //the 33--35 
+     "Pinkey Kuhic" -> "Dr. Garry Turner" 
+    //the 33--38 
+     "Eben Oberbrunner" -> "Lorrayne Kunde MD" 
+    //the 34--29 
+     "Eben Oberbrunner" -> "Alena Leuschke" 
+    //the 34--43 
+     "Osborne Homenick" -> "Palmer Oberbrunner" 
+    //the 36--6 
+     "Osborne Homenick" -> "Haleigh Brekke" 
+    //the 36--9 
+     "Osborne Homenick" -> "Dr. Landen Moore Sr." 
+    //the 36--14 
+     "Osborne Homenick" -> "Brylee Jacobson DDS" 
+    //the 36--16 
+     "Osborne Homenick" -> "Elenore Emmerich" 
+    //the 36--40 
+     "Osborne Homenick" -> "Louie Heller" 
+    //the 36--44 
+     "Rolando Koch DDS" -> "Dr. Landen Moore Sr." 
+    //the 37--14 
+     "Rolando Koch DDS" -> "Ellison Littel" 
+    //the 37--21 
+     "Rolando Koch DDS" -> "Alena Leuschke" 
+    //the 37--43 
+     "Dr. Tyrin Cummings Jr." -> "Tiarra Schaefer" 
+    //the 39--2 
+     "Dr. Tyrin Cummings Jr." -> "Florencio Jacobs" 
+    //the 39--7 
+     "Elenore Emmerich" -> "Melodee Schuster" 
+    //the 40--23 
+     "Elenore Emmerich" -> "Agatha Hilpert" 
+    //the 40--32 
+     "Yasmine Kris" -> "Florencio Jacobs" 
+    //the 42--7 
+     "Yasmine Kris" -> "Alena Leuschke" 
+    //the 42--43 
+     "Alena Leuschke" -> "Evalena Hegmann PhD" 
+    //the 43--4 
+     "Louie Heller" -> "Mr. Hazen Wilderman" 
+    //the 44--25 
+     "Louie Heller" -> "Isam Schuster II" 
+    //the 44--41 
+     "Louie Heller" -> "Shalon Nikolaus MD" 
+    //the 44--48 
+     "Deandra Rutherford" -> "Albertina Rogahn" 
+    //the 45--1 
+     "Deandra Rutherford" -> "Kenya Schimmel" 
+    //the 45--31 
+     "Deandra Rutherford" -> "Dr. Garry Turner" 
+    //the 45--38 
+     "Deandra Rutherford" -> "Shalon Nikolaus MD" 
+    //the 45--48 
+     "Maliah Kohler" -> "Palmer Oberbrunner" 
+    //the 46--6 
+     "Maliah Kohler" -> "Ms. Aline Johnson PhD" 
+    //the 46--19 
+     "Maliah Kohler" -> "Ellison Littel" 
+    //the 46--21 
+     "Maliah Kohler" -> "Virgil Stroman" 
+    //the 46--22 
+     "Maliah Kohler" -> "Ples Wehner" 
+    //the 46--49 
+     "Atticus Spencer" -> "Marian Deckow" 
+    //the 47--26 
+     "Atticus Spencer" -> "Elenore Emmerich" 
+    //the 47--40 
+     "Shalon Nikolaus MD" -> "Arvilla Schowalter" 
+    //the 48--11 
+     "Ples Wehner" -> "Mr. Ronal Balistreri" 
+    //the 49--35 
+
+}

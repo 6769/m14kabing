@@ -1,0 +1,6 @@
+digraph G{
+edge [fontname="FangSong"];
+node [shape=box, fontname="Microsoft Yahei"];
+"皮皮"->"碰碰博士"
+"pipi"->"炸弹机器人"
+}

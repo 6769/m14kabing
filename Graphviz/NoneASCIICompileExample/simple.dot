@@ -1,0 +1,14 @@
+digraph main{
+    node[shape=box,color=red,frontsize=15]
+    main[shape=diamond,color=blue]
+    make_string[label="make\nstring"]
+    main -> init
+    main -> parse
+    main -> cleanup
+    main -> printf
+    init -> make_string
+    parse -> execute
+    execute -> make_string
+    execute -> compare
+    execute -> printf
+}

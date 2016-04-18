@@ -2,16 +2,14 @@
 =========================
 
 .
-##1. JwinfoLogin.js##
+##1. Campus issue##
 
-this script needs an API as verify code transformer. An availlable one for our test is [http://api.5pipi.tk/api/zjuocr?img=<base64encoded img>](http://api.5pipi.tk/api/zjuocr?img=<base64encoded img> "http://api.5pipi.tk/api/zjuocr?img=<base64encoded img>").This script work for this flow:
 
-1. Load the original page,
-2. Get image object and describe in Base64 form.
-3. In xmlhttp,send out previous base64 encoded strings and API will return the number.
-4. Fill it!
 
-##2. JwinfoCourseLinkReplace.js ##
+##2. Graphviz ##
 
-This will be easy in page use http://jwbinfosys.zju.edu.cn/xskbcx.aspx?xh=313010xxxx; 
-however,some problems haven't solved in table and list modes.
+A powerful automatic generator of digraph or something .
+Official Site: http://www.graphviz.org/Download_windows.php 
+Basic Guide: http://casatwy.com/shi-yong-dotyu-yan-he-graphvizhui-tu-fan-yi.html (too much on Internet)
+
+The folder included scripts which are helpful to use Graphviz.
