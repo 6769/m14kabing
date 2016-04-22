@@ -1,0 +1,11 @@
+digraph url_genertor{
+    //simple structure
+    main_parameter->format_generate
+    format_generate->target_url_wrap
+    target_url_wrap->release_url
+    check_point[shape=diamond,color=blue]
+    release_url->check_point
+    
+    check_point->End[label="Gen Finished"]
+    check_point->target_url_wrap[label="Need more url"]
+}
