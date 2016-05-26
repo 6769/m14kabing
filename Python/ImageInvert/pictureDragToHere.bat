@@ -1,0 +1,2 @@
+python BatchImageToreverseColor.py %*
+pause
