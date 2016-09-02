@@ -1,1 +1,2 @@
-python convert.py %*
+python convertPngTransparent.py %*
+pause
