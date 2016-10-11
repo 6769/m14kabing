@@ -1,4 +1,4 @@
-﻿# Object files
+# Object files
 *.o
 
 # Libraries
@@ -20,9 +20,10 @@
 # Other
 *.pdf
 *.m
+*.html
 *.jpg
 *.jpeg
 *.bmp
-*.txt
+
 *.7z
 *.bak*
