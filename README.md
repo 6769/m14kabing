@@ -1,12 +1,11 @@
 5pip's  Script Repertory 
 =========================
 
-.
-##1. Campus issue##
+## 1. Campus issue
+some codes for colleges business.
 
 
-
-##2. Graphviz ##
+## 2. Graphviz
 
 A powerful automatic generator of digraph or something .
 Official Site: http://www.graphviz.org/Download_windows.php 
